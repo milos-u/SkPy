@@ -188,7 +188,7 @@ class SkypeEventLoop(Skype):
             autoAck (bool): whether to automatically acknowledge all incoming events
             status (.Status): availability to display to contacts
         """
-        super(SkypeEventLoop, self).__init__(user, pwd, tokenFile)
+        super(SkypeEventLoop, self).__init__(user, pwd, tokenFile=tokenFile)
         self.autoAck = autoAck
         if status:
             self.setPresence(status)
